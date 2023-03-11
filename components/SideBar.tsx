@@ -1,3 +1,4 @@
+import NewChat from "./NewChat"
 
 
 function SideBar() {
@@ -6,6 +7,7 @@ function SideBar() {
         <div className="flex-1">
             <div>
                 {/* NewChat */}
+                <NewChat />
             </div>
             <div>
                 {/* ModelSelection */}

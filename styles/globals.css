@@ -24,6 +24,9 @@ font-style: normal;
 font: size 29px;
 
 }
+.grad1{
+    background: linear-gradient(124.32deg, #1A23DC 19.22%, #62228A 46.62%);
+}
 .back1{
     background: linear-gradient(147.77deg, rgba(217, 217, 217, 0) 16.72%, rgba(217, 190, 255, 0.33) 35.68%, rgba(217, 189, 255, 0.49) 53.09%, rgba(241, 231, 255, 0) 66.68%);
     width:100%

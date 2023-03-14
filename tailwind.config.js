@@ -7,6 +7,9 @@ module.exports = {
   "./pages/**/*.{js,ts,jsx,tsx}",
   "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens:{
+      'xs':'300px',...defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         sans: ["Montserrat","public sans", ...defaultTheme.fontFamily.sans],

@@ -8,7 +8,7 @@ module.exports = {
   "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens:{
-      'xs':'300px',...defaultTheme.screens,
+      'xs':'300px','mdd':'960px',...defaultTheme.screens,
     },
     extend: {
       fontFamily: {

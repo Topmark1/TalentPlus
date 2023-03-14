@@ -3,7 +3,10 @@ import {BoltIcon, ExclamationTriangleIcon, SunIcon} from "@heroicons/react/24/ou
 import Header from "../components/Header"
 import Access from "../components/Access"
 import Partners from "../components/Partners"
-
+import Products from "../components/Products"
+import Payment from "../components/Payment"
+import Developer from "../components/Developer"
+import Why from "../components/Why"
 
 function HomePage() {
     
@@ -18,7 +21,18 @@ function HomePage() {
 
         {/*Partners*/}
         <Partners />
+
+        {/*Products*/}
+        <Products />
+
+        {/*Payment*/}
+        <Payment />
+
+        {/*Developer*/}
+        <Developer />
         
+        {/*Why*/}
+        <Why />
        </div>
     </div>
   )

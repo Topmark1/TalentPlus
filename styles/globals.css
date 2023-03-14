@@ -37,7 +37,20 @@ font: size 29px;
 }
 .grad3{
     background: linear-gradient(242.61deg, #8E25B9 24.46%, #4B0A71 59.64%);
-border-radius: 12.9648px;
+}
+.grad4{
+    background: linear-gradient(122.52deg, #A349C3 35.38%, #9249C3 51.95%, #5949C3 65.2%, rgba(127, 192, 255, 0.94) 75.65%);
+
+}
+.grad5{
+    background: linear-gradient(125.94deg, #FFEFE7 26.65%, rgba(220, 104, 46, 0.62) 91.33%);
+}
+.grad6{
+    background: linear-gradient(125.94deg, #000000 26.65%, #58504C 91.33%);
+}
+.grad7{
+    background: linear-gradient(242.61deg, #267E9E -21.75%, #081C3A 59.64%);
+
 }
 .lineHeight{
     line-height: 96px;

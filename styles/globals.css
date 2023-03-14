@@ -6,9 +6,25 @@
 
 .infoText {
  @apply text-xs sm:text-sm p-2 sm:p-4 bg-gray-700/50 rounded-lg max-w-[300px];
-}
-.chatRow{
-    @apply rounded-lg sm:px-5 py-3 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out
-}
+}}
 
+.font-publicSans{
+    font-family: 'public sans';
+}
+.font-Montserrat{
+    font-family: "montserrat";
+}
+.zeeh{
+    background: linear-gradient(124.32deg, #1A23DC 19.22%, #62228A 46.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "montserrat";
+font-style: normal;
+font: size 29px;
+
+}
+.back1{
+    background: linear-gradient(147.77deg, rgba(217, 217, 217, 0) 16.72%, rgba(217, 190, 255, 0.33) 35.68%, rgba(217, 189, 255, 0.49) 53.09%, rgba(241, 231, 255, 0) 66.68%);
+    width:100%
 }

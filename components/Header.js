@@ -8,7 +8,7 @@ import NavDrop from "./NavDrop.js"
 function Header() {
     
   return (
-    <div className=" mb-4 px-2 py-2 sm:px-5  flex items-center  sm:justify-between flex-wrap">
+    <div className=" mb-4 px-2 py-2 sm:px-5  flex items-start sm:items-center  sm:justify-between overflow-hidden">
       {/*left*/}
       <div className=" flex items-center space-x-1 sm:space-x-3 mb-3">
         <img className="cursor-pointer md:ml-5" src="/zeeh.svg" alt="" />
@@ -34,8 +34,8 @@ function Header() {
       </div>
       {/*left*/}
       <div className="flex lg:mr-4">
-        <button className="grad1 text-white rounded-md px-2 py-1 sm:py-1.5 sm:px-2 lg:px-5 shadow mx-1 sm:mx-1 text-xs sm:text-lg hover:brightness-75">Log in</button>
-        <button className=" rounded-md px-2 py-1 sm:py-1.5 sm:px-1.5 lg:px-5 shadow mx-1 sm:mx-2 text-xs sm:text-lg text-[#293CE1] border-2 border-[#293CE1] hover:bg-gray-300">Sign Up</button>
+        <button className="grad1 text-white sm:h-14 md:h-10 flex items-center justify-center text-center rounded-md px-2 py-1 sm:py-1.5 sm:px-2 lg:px-5 shadow mx-1 sm:mx-1 text-xs sm:text-lg h-8 hover:brightness-75">Log in</button>
+        <button className=" rounded-md h-8 md:h-10 px-2 py-1 sm:py-1.5 sm:px-1.5 lg:px-5 shadow mx-1 sm:h-14 sm:mx-2 text-xs sm:text-lg text-[#293CE1] border-2 border-[#293CE1] hover:bg-gray-300 flex items-center justify-center text-center">Sign Up</button>
       </div>
       
     </div>

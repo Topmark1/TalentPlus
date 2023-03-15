@@ -6,7 +6,7 @@ import Partners from "../components/Partners"
 import Products from "../components/Products"
 import Payment from "../components/Payment"
 import Developer from "../components/Developer"
-import Why from "../components/Why"
+import Whyy from "../components/Whyy"
 import Footer from "../components/Footer"
 
 function HomePage() {
@@ -33,7 +33,7 @@ function HomePage() {
         <Developer />
         
         {/*Why*/}
-        <Why />
+        <Whyy />
 
          {/*Footer*/}
          <Footer />

@@ -1,5 +1,5 @@
 
-function why() {
+export default function Why() {
   return (
     <div className="mt-2 sm:mt-20 mx-2 sm:mx-16 sm:px-12 flex flex-col items-center ">
         <p className="text-[17px] font-normal  sm:mb-1 text-[#707070] ">WHY ZEEH</p>
@@ -50,4 +50,3 @@ function why() {
   )
 }
 
-export default why

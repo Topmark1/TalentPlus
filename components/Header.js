@@ -2,6 +2,7 @@
 
 import { ChevronDownIcon,Bars3Icon, ChevronDoubleDownIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
+import NavDrop from "./NavDrop.js"
 
 
 function Header() {
@@ -15,8 +16,8 @@ function Header() {
       </div>
       {/*middle*/}
       <div className="ml-auto md:mr-5 sm:ml-10">
-        <div className="sm:hidden rounded-md px-2 py-1  shadow mx-1  text-xs border-2 border-[#293CE1] hover:bg-gray-300 lg:mr-2 lg:ml-5 sm:ml-20 cursor-pointer">
-       < ChevronDoubleDownIcon className="text-[#293CE1] w-3"/>
+        <div className="sm:hidden rounded-md px-2 py-1  shadow mx-1  text-xs border-2 border-[#293CE1] hover:bg-gray-300 lg:mr-2 lg:ml-5 sm:ml-20 cursor-pointer align-baseline">
+       <NavDrop />
        </div>
       <div className="hidden sm:flex font-Montserrat mr-5 text-xs mx-auto lg:px-5 sm:space-x-2 md:space-x-4 lg:space-x-8">
       

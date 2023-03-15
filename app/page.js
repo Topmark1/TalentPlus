@@ -7,6 +7,7 @@ import Products from "../components/Products"
 import Payment from "../components/Payment"
 import Developer from "../components/Developer"
 import Why from "../components/Why"
+import Footer from "../components/Footer"
 
 function HomePage() {
     
@@ -33,6 +34,9 @@ function HomePage() {
         
         {/*Why*/}
         <Why />
+
+         {/*Footer*/}
+         <Footer />
        </div>
     </div>
   )

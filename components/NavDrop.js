@@ -6,7 +6,7 @@ export default function MyDropdown() {
   return (
     <Menu >
       <Menu.Button>< ChevronDoubleDownIcon className="text-[#293CE1] w-3"/></Menu.Button>
-      <Menu.Items className={'flex flex-col space-x-2 bg-white justify-left items-start'}>
+      <Menu.Items className={'flex flex-col space-x-2 bg-white justify-left items-start transition-transform duration-200 ease-in-out'}>
         <Menu.Item>
           {({ active }) => (
             <a
@@ -60,7 +60,7 @@ export default function MyDropdown() {
         <Menu.Item disabled>
           {({ active }) => (
             <a
-              className={`mt-2 px-2 text-blue-600 font-bold hover:border-2 hover:border-blue-800 cursor-pointer ${active && ' border-blue-800'}`}
+              className={`mt-2 mb-2 px-2 text-blue-600 font-bold hover:border-2 hover:border-blue-800 cursor-pointer ${active && ' border-blue-800'}`}
               href="/"
             >
               Company

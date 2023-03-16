@@ -19,6 +19,7 @@ function HomePage() {
 
         {/*Access customers Data With No Code*/}
         <Access />
+        </div>
 
         {/*Partners*/}
         <Partners />
@@ -37,7 +38,7 @@ function HomePage() {
 
          {/*Footer*/}
          <Footer />
-       </div>
+      
     </div>
   )
 }

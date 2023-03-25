@@ -2,43 +2,91 @@
 
 import { ChevronDownIcon,Bars3Icon, ChevronDoubleDownIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
-import NavDrop from "./NavDrop.js"
+import { useState } from 'react';
 
 
 function Header() {
+  const [navbar, setNavbar] = useState(false);
     
   return (
-    <div className=" mb-4 px-2 py-2 sm:px-5  flex items-start sm:items-center  sm:justify-between overflow-hidden">
-      {/*left*/}
-      <div className=" flex items-center space-x-1 sm:space-x-3 mb-3">
-        <img className="cursor-pointer md:ml-5" src="/zeeh.svg" alt="" />
-        <h2  className="hidden zeeh font-extrabold  sm:text-3xl cursor-pointer xs:flex">Zeeh</h2>
-      </div>
-      {/*middle*/}
-      <div className="ml-auto md:mr-5 sm:ml-10">
-        <div className="sm:hidden rounded-md px-2 py-1  shadow mx-1  text-xs border-2 border-[#293CE1] hover:bg-gray-300 lg:mr-2 lg:ml-5 sm:ml-20 cursor-pointer align-baseline">
-       <NavDrop />
-       </div>
-      <div className="hidden sm:flex font-Montserrat mr-5 text-xs mx-auto lg:px-5 sm:space-x-2 md:space-x-4 lg:space-x-8">
-      
-        <Link href="/business" className="text-[#707070] font-bold lg:text-base cursor-pointer space-x-4">Business</Link>
-        <Link href="/business" className="text-[#707070] font-bold lg:text-base cursor-pointer space-x-4">Personal</Link>
-        <Link href="/pricing" className="text-[#707070] font-bold lg:text-base cursor-pointer">Pricing</Link>
-        <Link href="/documentation" className="text-[#707070] font-bold lg:text-base cursor-pointer">Documentation</Link>
-        <div className="inline-flex">
-        <Link href="/products" className="text-[#707070] font-bold lg:text-base cursor-pointer ">Products</Link>
-        <ChevronDownIcon className="text-black w-4 cursor-pointer"/>
+    <div className=""><nav className="w-full bg-[#004DB3] shadow">
+    <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div>
+        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <a href="#">
+            <h2 className="font-AK  text-2xl text-white ">Tech Time</h2>
+          </a>
+          <div className="md:hidden">
+            <button
+              className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+              onClick={() => setNavbar(!navbar)}
+            >
+              {navbar ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
-        <Link href="/company" className="text-[#303030] font-bold lg:text-base cursor-pointer">Company</Link>
       </div>
+      <div>
+        <div
+          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            navbar ? 'block' : 'hidden'
+          }`}
+        >
+          <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <li className="text-white">
+              <Link href="/">
+                Home
+              </Link>
+            </li>
+            <li className="text-white">
+              <Link href="/blogs">
+                Blogs
+              </Link>
+            </li>
+            <li className="text-white">
+              <Link href="/about">
+                About US
+              </Link>
+            </li>
+            <li className="text-white">
+              <Link href="/contact">
+                Contact US
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      {/*left*/}
-      <div className="flex lg:mr-4">
-        <button className="grad1 text-white sm:h-14 md:h-10 flex items-center justify-center text-center rounded-md px-2 py-1 sm:py-1.5 sm:px-2 lg:px-5 shadow mx-1 sm:mx-1 text-xs sm:text-lg h-8 hover:brightness-75">Log in</button>
-        <button className=" rounded-md h-8 md:h-10 px-2 py-1 sm:py-1.5 sm:px-1.5 lg:px-5 shadow mx-1 sm:h-14 sm:mx-2 text-xs sm:text-lg text-[#293CE1] border-2 border-[#293CE1] hover:bg-gray-300 flex items-center justify-center text-center">Sign Up</button>
-      </div>
-      
     </div>
+  </nav>
+  </div>
   )
 }
 

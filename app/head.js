@@ -1,9 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title>Zeeh</title>
+      <title>Tech Time</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="/zeeh.svg" />
+      <link rel="icon" href="/favicon.ico" />
     </>
   )
 }

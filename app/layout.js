@@ -1,5 +1,6 @@
 //'use client'
 
+import Header from '../components/Header'
 import '../styles/globals.css'
 
 
@@ -11,6 +12,9 @@ export default async function RootLayout({children}) {
     <body className=''>
   
     <div className='font-Sa' >
+      
+        {/* Header */}
+        <Header />
       {children}
       </div>
       

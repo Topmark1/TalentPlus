@@ -66,19 +66,29 @@ function Header() {
                 Home
               </Link>
             </li>
-            <li className="text-white">
+            <li className="text-[#AAC4E6]">
               <Link href="/blogs">
-                Blogs
+                About Us
               </Link>
             </li>
-            <li className="text-white">
+            <li className="text-[#AAC4E6]">
               <Link href="/about">
-                About US
+                Courses
               </Link>
             </li>
-            <li className="text-white">
+            <li className="text-[#AAC4E6]">
               <Link href="/contact">
-                Contact US
+               Testimonial
+              </Link>
+            </li>
+            <li className="text-[#AAC4E6]">
+              <Link href="/contact">
+                Community
+              </Link>
+            </li>
+            <li className="bg-white text-[#004DB3]">
+              <Link href="/contact">
+               <button>Enroll Now</button> 
               </Link>
             </li>
           </ul>

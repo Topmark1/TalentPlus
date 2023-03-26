@@ -7,7 +7,19 @@
  @apply text-xs sm:text-sm p-2 sm:p-4 bg-gray-700/50 rounded-lg max-w-[300px];
 }}
 
+@font-face{
+    font-family: 'Amaz';
+    src: url('/fonts/Amazing Kids.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+@font-face{
+    font-family: 'Baloo';
+    src: url('/fonts/Baloo2-VariableFont_wght.ttf') format('truetype');
+     font-weight: normal;
+    font-style:normal;
 
+}
 .font-CD{
     font-family: 'clash display';
 }
@@ -15,7 +27,7 @@
     font-family: 'satoshi';
 }
 .font-AK{
-    font-family: 'amazing kids';
+    font-family: 'Amaz';
 }
 .font-Montserrat{
     font-family: "montserrat";

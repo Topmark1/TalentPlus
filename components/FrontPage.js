@@ -54,12 +54,12 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         </img>
         </div>
                     <Image 
-                    src="/images/home/girl.svg"  
+                    src="/images/home/girl.png"  
                     className="w-[360px] sm:w-[450px] 2xl:w-[700px]" 
                     width={360}
                     height={450}
                     alt='girl'
-                    quality={1}/>
+                    />
        <div>
        <img    className='transform scale-50 2xl:scale-100  ml-[0px] sm:ml-[0px] lg:ml-[0px] xl:ml-[0px] mt-[0px]'  src='/Techbg/Vector-3.svg' alt='triange'>
         </img>

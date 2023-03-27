@@ -47,9 +47,9 @@ setNumber((num)=>num<255?num+5:num=255), 100);
       <div className="sm:w-1/2 pt-3 sm:pt-0 flex">
         {/* girl and logos */}
         <div>
+        <img    className='transform scale-50 2xl:scale-100  ml-[0px] sm:ml-[0px] lg:ml-[0px] xl:ml-[0px] mt-[0px]'  src='/Techbg/Vector-3.svg' alt='bulb' />
         <img    className='transform scale-50 2xl:scale-100 ml-[0px] sm:ml-[0px] md:ml-[0px] mt-[0px]' src='/Techbg/Vector-2.svg' alt='big circle'>
         </img>
-        
         <img    className='transform scale-50 2xl:scale-100 ml-[0px] sm:ml-[0px] md:ml-[0px] mt-[0px]' src='/Techbg/Vector-5.svg' alt='dot'>
         </img>
         </div>
@@ -58,7 +58,8 @@ setNumber((num)=>num<255?num+5:num=255), 100);
                     className="w-[360px] sm:w-[450px] 2xl:w-[700px]" 
                     width={360}
                     height={450}
-                    alt='girl'/>
+                    alt='girl'
+                    quality={1}/>
        <div>
        <img    className='transform scale-50 2xl:scale-100  ml-[0px] sm:ml-[0px] lg:ml-[0px] xl:ml-[0px] mt-[0px]'  src='/Techbg/Vector-3.svg' alt='triange'>
         </img>

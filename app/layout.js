@@ -9,7 +9,7 @@ export default async function RootLayout({children}) {
 
   return (
     <html lang="en">
-    <body className=''>
+    <body className='bg-[#004DB3]'>
   
     <div className='font-Sa' >
       

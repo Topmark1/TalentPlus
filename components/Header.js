@@ -9,12 +9,13 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
     
   return (
-    <div className=""><nav className="w-full bg-[#004DB3] shadow">
-    <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <div className=""  id="tech-time">
+      <nav className="w-full bg-[#004DB3] shadow">
+    <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-6 lg:px-14">
       <div>
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
         <a href="#">
-            <h2 className="font-AK  text-2xl text-white ">Tech Time</h2>
+            <h2 className="font-AK  text-[37px] text-white">Tech Time</h2>
           </a>
           <div className="md:hidden">
             <button
@@ -60,36 +61,36 @@ function Header() {
             navbar ? 'block' : 'hidden'
           }`}
         >
-          <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-[16px] font-bold">
             <li className="text-white">
-              <Link href="/">
+              <Link href="#home">
                 Home
               </Link>
             </li>
             <li className="text-[#AAC4E6]">
-              <Link href="/blogs">
+              <a href="#about">
                 About Us
-              </Link>
+              </a>
             </li>
             <li className="text-[#AAC4E6]">
-              <Link href="/about">
+              <a href="#courses">
                 Courses
-              </Link>
+              </a>
             </li>
             <li className="text-[#AAC4E6]">
-              <Link href="/contact">
+              <a href="#testimonial">
                Testimonial
-              </Link>
+              </a>
             </li>
             <li className="text-[#AAC4E6]">
-              <Link href="/contact">
+              <a href="#community">
                 Community
-              </Link>
+              </a>
             </li>
-            <li className="bg-white text-[#004DB3]">
-              <Link href="/contact">
-               <button>Enroll Now</button> 
-              </Link>
+            <li className="text-[#004DB3]">
+              <a href="#enroll">
+               <button className="px-5 py-2.5 rounded hover:bg-[#AAC4E6] hover:shadow-2xl bg-white">Enroll Now</button> 
+              </a>
             </li>
           </ul>
         </div>

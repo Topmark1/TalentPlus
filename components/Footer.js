@@ -4,10 +4,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 function Footer() {
   return ( 
       
-      <div className=" bg-[#060C42] px-5 sm:px-20 pt-5 sm:pt-20 pb-3 sm:pb-12 mt-[1000px] text-white text-[9px] sm:text-[14px] md:text-[18px] sm:flex justify-between items-start overflow-ellipsis">
-        <div className='flex items-center  space-x-3 sm:w-1/4 pr-1 sm:pr-8'>
-            <img className="w-10 " src='/zeeh.svg' alt="logo"
-/>       
+      <div id="enroll" className=" bg-[#060C42] px-5 sm:px-20 pt-5 sm:pt-20 pb-3 sm:pb-12 mt-[1000px] text-white text-[9px] sm:text-[14px] md:text-[18px] sm:flex justify-between items-start overflow-ellipsis">
+        <div className='flex items-center  space-x-3 sm:w-1/4 pr-1 sm:pr-8' >
+            <a href="#tech-time"><img className="w-10" src='/zeeh.svg' alt="logo"
+/>       </a>
         <p className="hidden sm:flex sm:text-[14px] font-normal">The future if finance is here</p>
         </div>
         <div className="  sm:w-1/4">

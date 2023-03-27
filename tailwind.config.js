@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["amazing kids","clash display",'satoshi', ...defaultTheme.fontFamily.sans],
+        sans: ["", ...defaultTheme.fontFamily.sans],
       },
     },
   },

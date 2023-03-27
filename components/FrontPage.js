@@ -1,10 +1,11 @@
-import React from 'react'
+"use client"
+import ScrollUpButton from "./ScrollUpButton"
 
 function FrontPage() {
   return (
     <div className="relative flex bg-[#004DB3] justify-center items-center">
     <div className=''>
-        <img  className='absolute transform scale-50 2xl:scale-100 -left-8 sm-left-4 2xl:left-0 top-[270px] 2xl:top-[440px]' src='/Techbg/Vector.svg' alt='wiggle' >
+        <img  className='absolute transform scale-50 2xl:scale-100 -left-8  2xl:left-0 top-[270px] 2xl:top-[440px]' src='/Techbg/Vector.svg' alt='wiggle' >
         </img>
         <img    className='absolute transform scale-50 2xl:scale-100 left-[100px] sm:left-[280px] md:left-[480px] top-[93px]' src='/Techbg/Vector-1.svg' alt='dot'>
         </img>
@@ -16,10 +17,12 @@ function FrontPage() {
         </img>
         <img    className='absolute transform scale-50 2xl:scale-100 left-[250px] sm:left-[350px] md:left-[650px] top-[400px]' src='/Techbg/Vector-5.svg' alt='dot'>
         </img>
+       <ScrollUpButton />
+
     </div>
-    <h1 className="text-2xl font-bold text-purple-500">
-      Create Responsive Navbar Menu in Next js with Tailwind CSS
-    </h1>
+    <div>
+
+    </div>
   </div>
   )
 }

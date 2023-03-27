@@ -1,7 +1,8 @@
-
-import {BoltIcon, ExclamationTriangleIcon, SunIcon} from "@heroicons/react/24/outline"
+"use client"
 import FrontPage from "../components/FrontPage"
+import ScrollUpButton from "../components/ScrollUpButton"
 import Footer from "../components/Footer"
+
 
 function HomePage() {
     
@@ -9,7 +10,7 @@ function HomePage() {
     <div className="">
         {/* FrontPage */}
         <FrontPage />
-
+        <ScrollUpButton />
          {/*Footer*/}
          <Footer />
       

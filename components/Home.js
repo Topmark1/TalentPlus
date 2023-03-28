@@ -58,7 +58,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         {/* girl and logos */}
         <Image 
                     src="/images/home/flexible.PNG"  
-                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-5 sm:mt-0" 
+                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-8 sm:mt-0" 
                     width={360}
                     height={450}
                     alt='girl'

@@ -14,7 +14,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
   
 
   return (
-    <div className="relative flex bg-[#004DB3] items-center">
+    <div className="relative flex bg-[#004DB3] items-center" id="home">
     <div className=''>
         <img  className='absolute transform scale-50 2xl:scale-100 -left-8 lg:-left-4 2xl:left-0 top-[270px] 2xl:top-[440px]' src='/Techbg/Vector.svg' alt='wiggle' >
         </img>
@@ -57,7 +57,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
       <div className="sm:w-1/2 pt-3 sm:pt-0 flex">
         {/* girl and logos */}
         <Image 
-                    src="/images/home/flexible.png"  
+                    src="/images/home/flexible.PNG"  
                     className="flex w-[360px] sm:w-[450px] 2xl:w-[700px]" 
                     width={360}
                     height={450}

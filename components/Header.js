@@ -65,9 +65,9 @@ function Header() {
         >
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-[16px] font-bold">
             <li className="text-white">
-              <Link href="#home">
+              <a href="#">
                 Home
-              </Link>
+              </a>
             </li>
             <li className="text-[#AAC4E6]">
               <a href="#about">
@@ -90,7 +90,7 @@ function Header() {
               </a>
             </li>
             <li className="text-[#004DB3]">
-              <a href="#enroll">
+              <a href="#home">
                <button className="px-5 py-2.5 rounded hover:bg-[#AAC4E6] hover:shadow-2xl bg-white">Enroll Now</button> 
               </a>
             </li>

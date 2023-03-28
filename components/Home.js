@@ -30,12 +30,12 @@ setNumber((num)=>num<255?num+5:num=255), 100);
 
         <div className="flex font-Sa text-[8px] sm:text-[16px] font-bold my-4">
           <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:bg-[#AAC4E6] hover:shadow-2xl border-2 border-white flex items-center mr-3"><span>Get Started Now </span><span><ArrowUpRightIcon className="w-4 pl-2 font-bold"/></span></button>
-          <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:bg-[#AAC4E6] hover:shadow-2xl bg-white text-[#004DB3]">Enroll Now</button>
+          <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:brightness-75 hover:shadow-2xl bg-white text-[#004DB3]">Enroll Now</button>
         </div>
         <div className="flex items-center">
           <div className="flex w-[90px] sm:w-[140px] 2xl:w-[200px] mr-1 sm:mr-2 " >
           {Array(5).fill(null).map((_, index) => (
-            <div key={index} className={`${index==0?'':'-ml-2 sm:-ml-3 lg:-ml-5'} `}><img src={`/images/home/Frame 9${index+5}.png`} alt='mini profile pix'></img></div>
+            <div key={index} className={`${index==0?'':'-ml-2 sm:-ml-3 lg:-ml-5'} transition duration-300 hover:scale-110 ease-in-out`}><img src={`/images/home/Frame 9${index+5}.png`} alt='mini profile pix'></img></div>
           ))
         }
           </div>
@@ -58,7 +58,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         {/* girl and logos */}
         <Image 
                     src="/images/home/flexible.PNG"  
-                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-8 sm:mt-0" 
+                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-8 sm:mt-0 animate-bounce" 
                     width={360}
                     height={450}
                     alt='girl'

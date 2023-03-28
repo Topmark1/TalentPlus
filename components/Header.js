@@ -3,10 +3,15 @@
 import { ChevronDownIcon,Bars3Icon, ChevronDoubleDownIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
 import { useState } from 'react';
-
+import { Font } from 'next/font'
+import styles from './index.module.css'
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
+  const Amaze = Font({
+    url: '/fonts/Amazing Kids.ttf',
+    variable: '--amazing-kids',
+  })
     
   return (
     <div className=""  id="tech-time">
@@ -15,7 +20,10 @@ function Header() {
       <div>
         <div className="flex items-center justify-between py-3 md:py-5 md:block ">
         <a href="#">
-            <h2 className="font-AK  text-[37px] text-white">Tech Time</h2>
+            <h2 className={`${amazingKids.variable} text-[37px] text-white`}>
+            <p className={styles.text}>Tech Time</p>
+             </h2>
+             <h2 className="font-AK  text-[37px] text-white">Tech Time</h2>
           </a>
           <div className="md:hidden">
             <button

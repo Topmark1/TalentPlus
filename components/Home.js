@@ -44,11 +44,11 @@ setNumber((num)=>num<255?num+5:num=255), 100);
             <p className="text-Sa font-medium text-[8px] sm:text-[16px]">previews</p>
           </div>
         </div>
-        <img    className='sm:hidden -mr-[210px]  -mt-[62px] animate-bounce' src='/images/home/sdirect.svg' alt='arrow' />
+        <img    className='sm:hidden -mr-[210px]  -mt-[62px] animate-pulse' src='/images/home/sdirect.svg' alt='arrow' />
        
       </div>
       <Image    
-      className='hidden sm:flex transform scale-50 2xl:scale-100 mt-[170px] md:mt[280px] md:w-[170px] 2xl:w-[150px] sm:-mr-[20px] md:-ml-[90px] lg:-ml-[120px] 2xl:mr-[0px] animate-bounce ' 
+      className='hidden sm:flex transform scale-50 2xl:scale-100 mt-[170px] md:mt[280px] md:w-[170px] 2xl:w-[150px] sm:-mr-[20px] md:-ml-[90px] lg:-ml-[120px] 2xl:mr-[0px] animate-pulse ' 
       src='/images/home/direct.svg' 
       width={50}
       height={100}
@@ -58,7 +58,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         {/* girl and logos */}
         <Image 
                     src="/images/home/flexible.PNG"  
-                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px]" 
+                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-5 sm:mt-0" 
                     width={360}
                     height={450}
                     alt='girl'

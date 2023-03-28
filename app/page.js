@@ -1,6 +1,7 @@
 "use client"
-import FrontPage from "../components/FrontPage"
+import Home from "../components/Home"
 import ScrollUpButton from "../components/ScrollUpButton"
+import About from "../components/About"
 import Footer from "../components/Footer"
 
 
@@ -8,9 +9,12 @@ function HomePage() {
     
   return (
     <div className="">
-        {/* FrontPage */}
-        <FrontPage />
+        {/* Home */}
+        <Home />
+        {/*ScrollUpButton*/}
         <ScrollUpButton />
+        {/*About*/}
+        <About/>
          {/*Footer*/}
          <Footer />
       

@@ -10,10 +10,10 @@ function Header() {
     
   return (
     <div className=""  id="tech-time">
-      <nav className="w-full bg-[#004DB3] shadow">
+      <nav className="w-full bg-[#004DB3] shadow ">
     <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-6 lg:px-14">
       <div>
-        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <div className="flex items-center justify-between py-3 md:py-5 md:block ">
         <a href="#">
             <h2 className="font-AK  text-[37px] text-white">Tech Time</h2>
           </a>
@@ -59,7 +59,7 @@ function Header() {
         <div
           className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
             navbar ? 'block' : 'hidden'
-          }`}
+          } `}
         >
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-[16px] font-bold">
             <li className="text-white">

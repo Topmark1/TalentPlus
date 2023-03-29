@@ -26,9 +26,9 @@ setNumber((num)=>num<255?num+5:num=255), 100);
     <div className="flex flex-col sm:flex-row px-4  md:px-6 lg:px-14 2xl:px-40 pt-25 items-center ">
       <div className="text-white flex flex-col  text-center sm:text-start items-center sm:items-start sm:w-1/2 pt-3 sm:pt-0">
         <h1 className="font-CD font-bold text-[32px] sm:text-[38px] 2xl:text-[64px] leading-[45px] sm:leading-[47px] 2xl:leading-[82px] pb-3 2xl:pb-4">Grow your skills to advance your career path</h1>
-        <p className="font-Sa font-medium text-[8px] leading-[14px] sm:leading-[26px] sm:text-[16px] 2xl:w-[500px] ">build your future with our quality education. the best and largest all-in-one online tutoring platform in the world</p>
+        <p className="font-Sa font-medium text-[10px] leading-[14px] sm:leading-[26px] sm:text-[16px] 2xl:w-[500px] ">build your future with our quality education. the best and largest all-in-one online tutoring platform in the world</p>
 
-        <div className="flex font-Sa text-[8px] sm:text-[16px] font-bold my-4">
+        <div className="flex font-Sa text-[10px] sm:text-[16px] font-bold my-4">
           <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:bg-[#AAC4E6] hover:shadow-2xl border-2 border-white flex items-center mr-3"><span>Get Started Now </span><span><ArrowUpRightIcon className="w-4 pl-2 font-bold"/></span></button>
           <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:brightness-75 hover:shadow-2xl bg-white text-[#004DB3]">Enroll Now</button>
         </div>
@@ -41,7 +41,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
           </div>
           <div>
             <h4 className="text-[17px] sm:text-[24px] font-bold font-CD leading-[14px] sm:leading-[16px] 2xl:leading-[30px] "><span>{number?(number+"k"):''}</span><span className="animate-pulse">+</span></h4>
-            <p className="text-Sa font-medium text-[8px] sm:text-[16px]">previews</p>
+            <p className="text-Sa font-medium text-[10px] sm:text-[16px]">previews</p>
           </div>
         </div>
         <img    className='sm:hidden -mr-[210px]  -mt-[62px] animate-pulse' src='/images/home/sdirect.svg' alt='arrow' />
@@ -58,7 +58,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         {/* girl and logos */}
         <Image 
                     src="/images/home/flexible.PNG"  
-                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-8 sm:mt-0 animate-bounce" 
+                    className="flex w-[360px] sm:w-[450px] 2xl:w-[700px] -mt-8 sm:mt-0 " 
                     width={360}
                     height={450}
                     alt='girl'

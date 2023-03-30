@@ -58,7 +58,7 @@ function About() {
         <div className="sm:w-1/2 flex flex-col">
           <h2 className="font-CD font-bold text-[24px] sm:text-[40px] 2xl:text-[54px] leading-[36px] sm:leading-[50px] 2xl:leading-720px] text-center sm:text-start text-[#000F24]">This is Why We Are Best From Others</h2>
           <p className="font-medium  text-[10px] sm:text-[12px] 2xl:text-[16px] leading-[17px] sm:leading-[23px] 2xl:leading-[30px] text-[#A1A1A1] px-10 sm:px-0 text-center sm:text-start py-1">high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
-          <img src="/images/about/boy.PNG" className="mt-3" alt="boy studying"/>
+          <img src="/images/about/boy.png" className="mt-3" alt="boy studying"/>
         </div>
         {/*  four Box */}
         <div className="mt-4 sm:mx-3 2xl:mx-6 sm:w-1/2">

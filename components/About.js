@@ -21,7 +21,9 @@ function About() {
           <h2 className="font-CD font-bold text-[24px] sm:text-[40px] 2xl:text-[54px] leading-[36px] sm:leading-[50px] 2xl:leading-720px] text-center sm:text-start text-[#000F24]">High quality video, audio & live classes</h2>
         </div>     
         <p className=" font-medium  text-[10px] sm:text-[12px] 2xl:text-[16px] leading-[17px] sm:leading-[23px] 2xl:leading-[30px] text-[#A1A1A1] px-10 sm:px-0 text-center sm:text-start py-1">high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
+        <Link href="/newpage">
         <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hoverhtness-75 hover:shadow-2xl bg-[#004DB3] text-white text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold my-2">View Courses</button>
+        </ Link>
         <div  className="text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold text-[#000F24] mt-5">
           <div className="flex mb-3">
             <div className="flex items-center bg-white pl-4 pr-8 py-2 sm:pl-6 sm:pr-12 sm:py-3 2xl:pl-8 2xl:pr-16 2xl:py-4 mr-3 rounded cursor-pointer hover:bg-gray-200">

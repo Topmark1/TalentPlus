@@ -1,7 +1,7 @@
 "use client" 
 
 // Import React hooks
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
 // Import the icon component
 import { ArrowUpIcon } from "@heroicons/react/24/outline"; 
@@ -27,7 +27,13 @@ function ScrollUpButton(){
       behavior: "smooth",
     });
   };
-
+ 
+  useLayoutEffect(() => {
+    window.scrollTo({
+      top: 0,
+      //behavior: "smooth",
+    });
+  }, [])
   // Use the useEffect hook to add and remove the scroll event listener
   useEffect(() => {
     // Add the handleScroll function as a listener to the scroll event
@@ -51,7 +57,7 @@ function ScrollUpButton(){
         {/* Use the ArrowUpIcon component with Tailwind CSS classes for sizing and coloring */}
         <ArrowUpIcon className="h-6 w-6 text-gray-600" />
       </button>
-    )
+    ) 
   );
 };
 

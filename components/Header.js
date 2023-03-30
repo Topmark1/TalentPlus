@@ -11,14 +11,14 @@ function Header() {
   
     
   return (
-    <div className=""  id="tech-time">
+    <div className=""  id="home">
       <nav className="w-full bg-[#004DB3] shadow ">
     <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-6 lg:px-14">
       <div>
         <div className="flex items-center justify-between py-3 md:py-5 md:block ">
-        <a href="#">
-             <h2 className="font-AK  text-[37px] text-white">Tech Time</h2>
-          </a>
+        <Link href="/">
+             <h2 className="font-AK  text-[37px] text-white" >Tech Time</h2>
+          </Link>
           <div className="md:hidden">
             <button
               className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -65,9 +65,9 @@ function Header() {
         >
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-[16px] font-bold">
             <li className="text-white">
-              <a href="#">
+              <Link href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="text-[#AAC4E6]">
               <a href="#about">
@@ -90,9 +90,9 @@ function Header() {
               </a>
             </li>
             <li className="text-[#004DB3]">
-              <a href="#home">
+              <Link href="/newpage">
                <button className="px-5 py-2.5 rounded hover:bg-[#AAC4E6] hover:shadow-2xl bg-white">Enroll Now</button> 
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

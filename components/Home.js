@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useLayoutEffect, useState } from "react";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function Home() {
 
@@ -14,7 +15,7 @@ setNumber((num)=>num<255?num+5:num=255), 100);
   
 
   return (
-    <div className="relative flex bg-[#004DB3] items-center" id="home">
+    <div className="relative flex bg-[#004DB3] items-center" id="">
     <div className=''>
         <img  className='absolute transform scale-50 2xl:scale-100 -left-8 lg:-left-4 2xl:left-0 top-[270px] 2xl:top-[440px]' src='/Techbg/Vector.svg' alt='wiggle' >
         </img>
@@ -29,8 +30,11 @@ setNumber((num)=>num<255?num+5:num=255), 100);
         <p className="font-Sa font-medium text-[10px] leading-[14px] sm:leading-[26px] sm:text-[16px] 2xl:w-[500px] ">build your future with our quality education. the best and largest all-in-one online tutoring platform in the world</p>
 
         <div className="flex font-Sa text-[10px] sm:text-[16px] font-bold my-4">
-          <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:bg-[#AAC4E6] hover:shadow-2xl border-2 border-white flex items-center mr-3"><span>Get Started Now </span><span><ArrowUpRightIcon className="w-4 pl-2 font-bold"/></span></button>
+        <Link href="/newpage">
+          <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:bg-[#AAC4E6] hover:shadow-2xl border-2 border-white flex items-center mr-3"><span>Get Started Now </span><span><ArrowUpRightIcon className="w-4 pl-2 font-bold"/></span></button> </Link>
+          <Link href="/newpage">
           <button className="px-4 sm:px-5 lg:px-8 py-2 sm:py-2.5 2xl:py-4 rounded hover:brightness-75 hover:shadow-2xl bg-white text-[#004DB3]">Enroll Now</button>
+          </ Link>
         </div>
         <div className="flex items-center">
           <div className="flex w-[90px] sm:w-[140px] 2xl:w-[200px] mr-1 sm:mr-2 " >

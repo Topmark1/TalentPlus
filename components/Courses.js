@@ -1,6 +1,6 @@
 "use client"
 import Course from "./Course.js"
-import Link from "next/link.js"
+import Link from "next/link"
 
 function courses() {
   return (
@@ -10,7 +10,7 @@ function courses() {
         <p className="font-medium  text-[10px] sm:text-[12px] 2xl:text-[16px] leading-[17px] sm:leading-[23px] 2xl:leading-[30px] text-[#A1A1A1] px-10 sm:px-20 lg:px-40 2xl:px-80 pt-1 pb-4">high-defination video is video of higher resolution and quality than standard definition. while there’s no standard meaning for high definition, generally any standard video image</p>
         {/* courses category select */}
         <div className='font-Sa flex space-x-1.5 sm:space-x-3 2xl:space-x-4 flex-wrap justify-center'>
-            <button className='rounded py-1 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold cursor-pointer text-[#A1A1A1] hover:text-blue-500 focus:text-[#004DB3]  focus:bg-white focus:outline-none' autoFocus>All Categories</button>
+            <button className='rounded py-1 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold cursor-pointer text-[#A1A1A1] hover:text-blue-500 focus:text-[#004DB3]  focus:bg-white focus:outline-none'>All Categories</button>
             <button className='rounded py-1 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold cursor-pointer text-[#A1A1A1] hover:text-blue-500 focus:text-[#004DB3]  focus:bg-white focus:outline-none'>Design</button>
             <button className='rounded py-1 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold cursor-pointer text-[#A1A1A1] hover:text-blue-500 focus:text-[#004DB3]  focus:bg-white focus:outline-none'>Developer</button>
             <button className='rounded py-1 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-[12px] 2xl:text-[16px] font-bold cursor-pointer text-[#A1A1A1] hover:text-blue-500 focus:text-[#004DB3]  focus:bg-white focus:outline-none'>Marketing</button>

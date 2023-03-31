@@ -20,13 +20,13 @@ function HomePage() {
         {/*About*/}
         <About/>
         {/*Courses*/}
-        <Courses/>
+         <Courses/> 
         {/*Testimonial*/}
         <Testimonial/>
         {/*Community */}
         <Community />
         {/*Questions */}
-        <Questions />        
+        <Questions />       
              
     </div>
   )

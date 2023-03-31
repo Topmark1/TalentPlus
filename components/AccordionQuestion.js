@@ -28,7 +28,7 @@ export default function Example() {
   return (
    <Fragment >
        <Accordion open={open === 1} animate={customAnimation} >
-        <AccordionHeader onClick={() => handleOpen(1)} className={`${open==1?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>          Is there a free trial availbable?
+        <AccordionHeader onClick={() => handleOpen(1)} className={`${open==1?"focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>          Is there a free trial availbable?
         </AccordionHeader>
         <AccordionBody>
           high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. 

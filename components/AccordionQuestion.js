@@ -35,14 +35,14 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} animate={customAnimation} >
-        <AccordionHeader onClick={() => handleOpen(2)} className={`${open==2?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>          Can I change my plan later?
+        <AccordionHeader onClick={() => handleOpen(2)} className={`${open==2?" focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>          Can I change my plan later?
         </AccordionHeader>
         <AccordionBody>
           high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. the best and largest all-in-one online tutoring platform in the worldd definition. 
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(3)} className={`${open==3?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
+        <AccordionHeader onClick={() => handleOpen(3)} className={`${open==3?" focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
          Are the courses lifetime?
         </AccordionHeader>
         <AccordionBody>
@@ -50,7 +50,7 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 4} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(4)} className={`${open==4?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
+        <AccordionHeader onClick={() => handleOpen(4)} className={`${open==4?" focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
          Do I Get Certified After Taking Courses?
         </AccordionHeader>
         <AccordionBody>
@@ -58,7 +58,7 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 5} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(5)} className={`${open==5?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
+        <AccordionHeader onClick={() => handleOpen(5)} className={`${open==5?"focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
          How do I reach out to mentors?
         </AccordionHeader>
         <AccordionBody>
@@ -66,7 +66,7 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 6} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(6)} className={`${open==6?"text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
+        <AccordionHeader onClick={() => handleOpen(6)} className={`${open==6?"focus:text-[#004DB3] text-[#004DB3]":'text-[#000F24]'} font-black text-[14px] sm:text-[18px] 2xl:text-[22px]`}>
          Do we get job ready after taking courses?
         </AccordionHeader>
         <AccordionBody>

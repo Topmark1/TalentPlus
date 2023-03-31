@@ -2,6 +2,8 @@
 
 This project is a web application built with Next.js 13, Tailwind CSS, Material Tailwind and Docker. It showcases the features and benefits of using these technologies for creating fast, responsive and modern websites.
 
+## Project Link - https://tech-time-akande-temitope.vercel.app/
+
 ## Features
 
 - The project contains five sections: Home, About Us, Courses, Testimonials and Community.

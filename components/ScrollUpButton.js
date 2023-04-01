@@ -28,6 +28,12 @@ function ScrollUpButton(){
     });
   };
  
+  useLayoutEffect(() => {
+    window.scrollTo({
+      top: 0,
+      //behavior: "smooth",
+    });
+  }, [])
   // Use the useEffect hook to add and remove the scroll event listener
   useEffect(() => {
     // Add the handleScroll function as a listener to the scroll event

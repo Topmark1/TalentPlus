@@ -1,18 +1,34 @@
-import React from 'react'
+import { useRef,useEffect, useState } from "react"
 
 function TestimonialSlider() {
+    const [scrollerPosition, setScrollerPosition] = useState(0)
 
+        //scroller position code
+        const scrollerRef = useRef(null);
+        useEffect(() => {
+         const handleScroll = () => {
+            //condition to set scroller position
+           setScrollerPosition(((scrollerRef.current.scrollLeft)/(scrollerRef.current.scrollWidth))*100)
+              
+         };
+        const scroller = scrollerRef.current;
+        scroller.addEventListener('scroll', handleScroll);
+        return () => {
+        scroller.removeEventListener('scroll', handleScroll);
+        };
+        }, []);
+           let m = scrollerPosition 
+            
     const slidersData = [ 
         {data:["Moon Bella","./images/testimonial/1.svg"]},
         {data:["Samuel Fortune","./images/testimonial/2.svg"]},
         {data:["Bryce James","./images/testimonial/3.svg"]},
         {data:["Bella Moon","./images/testimonial/1.svg"]},
+                        ]
 
-    ]
-// transform hover:scale-110 
-//w-[330px] h-[200px] sm:w-[470px] sm:h-[300px] 2xl:w-[600px] 2xl:h-400px
    return (
-    <div className='flex font-Sa text-[#A1A1A1] font-medium text-[14x] md:text-[18px] space-x-8 sm:space-x-12 2xl:space-x-16 overflow-x-scroll scrollbar-hide pb-4' >
+    <div className="bg-[#F8F9FC] pb-10">
+         <div className='flex font-Sa text-[#A1A1A1] font-medium text-[14x] md:text-[18px] space-x-8 sm:space-x-12 2xl:space-x-16 overflow-x-scroll  scrollbar-hide pb-4' ref={scrollerRef} >
     {slidersData.map(
              (data)=>
          <div className='first:pl-5 first:ml-5 last:pr-5 cursor-pointer transition ease-in-out duration-300 transform hover:scale-105 rounded-md shadow-md bg-white px-4 sm:px-8 2xl:px-12 py-6 2xl:py-12  ' key={data.data[0]}>
@@ -26,7 +42,19 @@ function TestimonialSlider() {
             </div>
             </div> )}
             {/* <div className="absolute top-0 right-0 bg-gradient-to-l from-[#F8F9FC] h-full w-1/9 sm:w-1/5 lg:w-1/9"></div> */}
-       </div>)
+       </div>
+      <div className=' flex space-x-2 sm:space-x-3 2xl:space-x-4 justify-center mt-3'>
+            <button className={`rounded-full py-[4px]  px-[4px] lg:px-1.5 lg:py-1.5 ${m>-1&&m<20? "bg-[#004DB3]":"bg-blue-300"} lg:bg-blue-300`}></button>
+            <button className={`rounded-full py-[4px]  px-[4px] lg:px-1.5 lg:py-1.5 ${m>20&&m<40?"bg-[#004DB3]" :"bg-blue-300"} ${m>-1&&m<20? "lg:bg-[#004DB3]":"lg:bg-blue-300"}  `}></button>
+            <button className={`rounded-full py-[4px]  px-[4px] lg:px-1.5 lg:py-1.5 ${m>40&&m<60?"bg-[#004DB3]" :"bg-blue-300"} ${m>20&&m<40? "lg:bg-[#004DB3]":"lg:bg-blue-300"}`}></button>
+            <button className={`rounded-full py-[4px]  px-[4px] lg:px-1.5 lg:py-1.5 ${m>60&&m<80?"bg-[#004DB3]" :"bg-blue-300"} `}></button>
+        </div>
+        
+    </div>
+
+
+
+   )
 }
 
 export default TestimonialSlider
